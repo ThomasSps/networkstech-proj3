@@ -12,8 +12,6 @@
         <select name="Place" onchange="fill(this);">
         <?php
 
-            
-
             $string = file_get_contents("corfu_weather.json");
             $json_a = json_decode($string, true);
 
