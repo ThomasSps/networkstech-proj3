@@ -37,13 +37,40 @@ function place ($location){
 
 // TODO: Implement the coord transform and get the in between coords locations
 function coord ($lon1, $lat1, $lon2, $lat2){
+    
+    if ($lon1 > $lon2 ){
+        
+        $max_lon = $lon1;
+        $min_lon = $lon2;
+        
+    }
+    else{
+        
+        $max_lon = $lon2;
+        $min_lon = $lon1;
+        
+    }
+    
+    if ($lat1 > $lat2 ){
+        
+        $max_lat = $lat1;
+        $min_lat = $lat2;
+        
+    }
+    else{
+        
+        $max_lat = $lat2;
+        $min_lat = $lat1;
+        
+    }
+    
 
     $string = file_get_contents("corfu_weather.json");
     $json_a = json_decode($string, true);
 
     foreach ($json_a["list"] as $place) {
 
-        if ($place['name'] == $location){
+        if (($place['coord']['lon'] <= $max_lon) && ($place['coord']['lon'] >= $min_lon) && ($place['coord']['lat'] <= $max_lat) && ($place['coord']['lat'] >= $min_lat)){
 
 
             echo '<table id="data">';
