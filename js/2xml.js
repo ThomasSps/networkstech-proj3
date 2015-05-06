@@ -8,6 +8,6 @@ function toxml () {
     $.getJSON('corfu_weather.json', function(data) {
         
         var j = j2x.json2xml_str(data);
-        document.getElementById('xml').value = data;
+        document.getElementById('xml').value = j;
     });    
 }

@@ -54,7 +54,7 @@ body, html {
 }
 
 #coords-form {
-	position: relative;
+	position: relative; overflow: auto;
 	width: 30%; height: 100%;
 	float: right; text-align: center;
 }
