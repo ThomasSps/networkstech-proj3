@@ -28,7 +28,6 @@
             <!-- - - - - - - - - - - - - - -->
             <div id="first-right">
                 <div id="area-weather" class="glassbox">
-                    <!-- TABLE CONTENTS HERE -->
                     <h2>Choose a metropolis to show weather</h2>
                 </div>
             </div>
@@ -36,7 +35,7 @@
         <div style="width:98%; height:30%; padding:1%;">
             <div id="coords" class="glassbox">
                 <div id="coords-array">
-
+                    <h2>Enter coordinates to the form to view weather in nearby areas</h2>
                 </div>
                 <div id="coords-form">
                     <form id="coordsform" action="javascript:fillCoords();" onsubmit="document.getElementById("coordsform").submit();">
@@ -56,7 +55,10 @@
             </div>
         </div> <!-- CLOSES SECOND ONE -->
         <div style="width:98%; height:29%; padding:1%;">
-            THIS WILL BE THE 3rd
+            <div id="js2xml" class="glassbox">
+                <textarea id="xml"  readonly=""></textarea>
+                <button id="convert-button">CONVERT 2 XML</button>
+            </div>
         </div> <!-- CLOSES THRID ONE -->
     </div>   
 </body>

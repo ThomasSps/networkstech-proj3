@@ -66,6 +66,29 @@ body, html {
 	width: auto; height: 60%;
 }
 
+#js2xml {
+	height: 90%;
+}
+
+#js2xml > textarea {
+	height: 100%; width: 85%;
+	display: inline-block;
+	margin: 0 auto;
+	border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+}
+
+#convert-button {
+	float: right;
+	width: 13%; height: 100%;
+}
+
 table#data {
 	width: 100%; margin: auto; 
 	padding-left: 40px; padding-right: 40px;
