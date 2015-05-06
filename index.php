@@ -60,7 +60,7 @@
         <div style="width:98%; height:29%; padding:1%;">
             <div id="js2xml" class="glassbox">
                 <textarea id="xml"  readonly=""></textarea>
-                <button id="convert-button">CONVERT 2 XML</button>
+                <button id="convert-button" onclick="toxml()">CONVERT 2 XML</button>
             </div>
         </div> <!-- CLOSES THRID ONE -->
     </div>   

@@ -5,10 +5,9 @@ function toxml () {
     
     var myItems;
 
-    $.getJSON('/test/corfu_weather.json', function(data) {
+    $.getJSON('corfu_weather.json', function(data) {
         
         var j = j2x.json2xml_str(data);
         document.getElementById('xml').value = data;
-    });
-    
+    });    
 }
